@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="max-w-[1250px] m-auto py-[25px] px-[15px] w-[100%] grid grid-cols-1 md:grid-cols-2  gap-[30px]">
           <div className="banner_info flex flex-col gap-[20px]  items-center justify-start  w-full  ">
             <div className="heading">
-              <h1 className="font-Space_Grotesk text-[70px] sm:text-[45px] leading-[74.2px] text-[#fff] ">
+              <h1 className="font-Space_Grotesk text-[45px] sm:text-[70px] leading-[74.2px] text-[#fff] ">
                 Unleash your creativity with BeterAI
               </h1>
             </div>
