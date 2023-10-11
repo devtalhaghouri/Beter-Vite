@@ -4,10 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
+/* section {
   position: relative;
   overflow: hidden;
-}
+} */
 
 @font-face {
   font-family: "Space_Grotesk";
@@ -18,13 +18,32 @@ section {
   position: relative;
   overflow: hidden;
 }
-#home {
-  /* z-index: -10;
+
+body {
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://uploads-ssl.webflow.com/6448ee66738b3eb4ba15b54f/6448ee67738b3e37fb15b5a7_noise_bg.png"),
+    linear-gradient(#f8f7f3, #f8f7f3);
+  background-position: 0 0, 0 0;
+  background-size: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.banner_bc {
+  /* background-image: url("/src/assets/Images/background_1.jpg"),
+    url("/src/assets/Images/background_2.jpg");
+  z-index: -10;
   height: 92em;
   mix-blend-mode: darken;
   background-color: #f8f7f3;
-  background-image: url("/src/assets/Images/background_1.jpg"),
-    url("/src/assets/Images/background_2.jpg");
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: cover, cover;
@@ -36,7 +55,7 @@ section {
   right: 0%; */
 }
 
-#home::after{
+.banner_bc::after {
   content: "";
   background: url("/src/assets/Images/background_1.jpg");
   background-position: top center;
@@ -44,11 +63,11 @@ section {
   position: absolute;
   top: 0px;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
   background-size: auto;
   height: 100%;
 }
-#home::before{
+.banner_bc::before {
   content: "";
   background: url("/src/assets/Images/background_2.jpg");
   background-position: top center;

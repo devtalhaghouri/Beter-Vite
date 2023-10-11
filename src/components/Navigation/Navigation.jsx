@@ -12,7 +12,7 @@ const Navigation = () => {
           </div>
 
           <nav className="flex gap-[15px] w-fullitems-center justify-end">
-            <ul className="w-[100%] flex flex-row gap-[15px] max-w-fititems-center">
+            <ul className="w-[100%] flex flex-row gap-[15px] max-w-fit items-center absolute top-0 h-[100vh] bg-white   md:relative top-0 h-fit bg-none h-auto ">
               {navgation?.map((nav) => (
                 <>
                   <Link
