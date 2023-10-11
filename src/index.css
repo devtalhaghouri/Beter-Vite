@@ -1,0 +1,62 @@
+/* import */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Space_Grotesk";
+  src: url("./Styles/Font/Space_Grotesk/SpaceGrotesk-Bold.ttf");
+}
+
+#app {
+  position: relative;
+  overflow: hidden;
+}
+#home {
+  /* z-index: -10;
+  height: 92em;
+  mix-blend-mode: darken;
+  background-color: #f8f7f3;
+  background-image: url("/src/assets/Images/background_1.jpg"),
+    url("/src/assets/Images/background_2.jpg");
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: scroll, scroll;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%; */
+}
+
+#home::after{
+  content: "";
+  background: url("/src/assets/Images/background_1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  background-size: auto;
+  height: 100%;
+}
+#home::before{
+  content: "";
+  background: url("/src/assets/Images/background_2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  background-size: auto;
+  height: 100%;
+}
