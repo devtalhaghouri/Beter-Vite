@@ -47,27 +47,27 @@ const Banner = () => {
             </div>
           </div>
           <div className="banner_info_image flex justify-center md:justify-end items-center">
-          <div className="banner_img_1">
-          <img
-              src={bannerInfo1}
-              alt="Banner_Info_1"
-              className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
-            />
-          </div>
-          <div className="banner_img_2">
-          <img
-              src={bannerInfo2}
-              alt="Banner_Info_1"
-              className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
-            />
-          </div>
-          <div className="banner_img_3">
-          <img
-              src={bannerInfo3}
-              alt="Banner_Info_1"
-              className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
-            />
-          </div>
+            <div className="banner_img_1 ">
+              <img
+                src={bannerInfo1}
+                alt="Banner_Info_1"
+                className="w-full max-w-[200px] md:max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform "
+              />
+            </div>
+            <div className="banner_img_2">
+              <img
+                src={bannerInfo2}
+                alt="Banner_Info_1"
+                className="w-full max-w-[200px] md:max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform "
+              />
+            </div>
+            <div className="banner_img_3">
+              <img
+                src={bannerInfo3}
+                alt="Banner_Info_1"
+                className="w-full max-w-[200px] md:max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform "
+              />
+            </div>
           </div>
         </div>
       </section>
