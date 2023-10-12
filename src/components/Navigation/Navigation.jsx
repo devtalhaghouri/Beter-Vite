@@ -10,7 +10,7 @@ const Navigation = () => {
 
   return (
     <>
-      <header id="header" className="relative ">
+      <header id="header" className="relative z-[1]">
         <div className="max-w-[1250px] m-auto py-[15px] md:py-[10px] px-[15px] w-[100%] flex flex-row justify-between">
           <div className="logo w-full flexitems-center justify-center max-w-fit">
             <img

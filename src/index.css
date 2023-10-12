@@ -55,6 +55,24 @@ body::after {
   right: 0%; */
 }
 
+#banner {
+  height: 100vh;
+  position: relative;
+  z-index: 12;
+}
+.noise {
+  opacity: 0.7;
+  mix-blend-mode: soft-light;
+  background-image: url("https://uploads-ssl.webflow.com/6448ee66738b3eb4ba15b54f/6448ee67738b3ea56e15b577_noise.png");
+  background-position: 0 0;
+  background-size: auto;
+  background-attachment: scroll;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
 .banner_bc::after {
   content: "";
   background: url("/src/assets/Images/background_1.jpg");
@@ -78,13 +96,13 @@ body::after {
   z-index: -1;
   background-size: auto;
   height: 100%;
-  
 }
 
 .banner_info_image {
   position: relative;
   will-change: transform;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(-2.83444deg) rotateY(5.9143deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(-2.83444deg)
+    rotateY(5.9143deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   max-width: 20em;
   position: relative;
@@ -94,38 +112,36 @@ body::after {
   display: flex;
   transition: all 0.9s ease-in;
   right: -130px;
-
-  
 }
 
-
-.banner_info_image:hover{
+.banner_info_image:hover {
   will-change: transform;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(-4.96678deg) rotateY(5.68638deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(-4.96678deg)
+    rotateY(5.68638deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
-.banner_info_image:hover .banner_img_1{
+.banner_info_image:hover .banner_img_1 {
   will-change: transform;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(11.8751deg) rotateY(-11.8751deg) rotateZ(11.8751deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(11.8751deg)
+    rotateY(-11.8751deg) rotateZ(11.8751deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
-
-.banner_info_image:hover .banner_img_2{
-
+.banner_info_image:hover .banner_img_2 {
   will-change: transform;
-  transform: translate3d(0px, 2.84688em, -200px) scale3d(1, 1, 1) rotateX(15.5659deg) rotateY(-15.5659deg) rotateZ(15.5659deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 2.84688em, -200px) scale3d(1, 1, 1)
+    rotateX(15.5659deg) rotateY(-15.5659deg) rotateZ(15.5659deg)
+    skew(0deg, 0deg);
   transform-style: preserve-3d;
-
 }
 
-.banner_info_image:hover .banner_img_3{
-
+.banner_info_image:hover .banner_img_3 {
   will-change: transform;
-  transform: translate3d(0px, -1.71092em, -240px) scale3d(1, 1, 1) rotateX(15.5659deg) rotateY(-15.5659deg) rotateZ(15.5659deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -1.71092em, -240px) scale3d(1, 1, 1)
+    rotateX(15.5659deg) rotateY(-15.5659deg) rotateZ(15.5659deg)
+    skew(0deg, 0deg);
   transform-style: preserve-3d;
-
 }
 .banner_info_image .banner_img_1 {
   transition: all 0.5s ease-in-out;
@@ -144,7 +160,6 @@ body::after {
   left: -25%;
 }
 
-
 .banner_info_image .banner_img_2 {
   will-change: transform;
   /* margin-right: -140px; */
@@ -156,7 +171,7 @@ body::after {
   transform-style: preserve-3d;
   z-index: 20;
   width: 100%;
-  opacity: .74;
+  opacity: 0.74;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -168,11 +183,13 @@ body::after {
 }
 .banner_info_image .banner_img_3 {
   will-change: transform;
-  transform: translate3d(0px, -1.99936em, -240px) scale3d(1, 1, 1) rotateX(22.9972deg) rotateY(-22.9972deg) rotateZ(22.9972deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -1.99936em, -240px) scale3d(1, 1, 1)
+    rotateX(22.9972deg) rotateY(-22.9972deg) rotateZ(22.9972deg)
+    skew(0deg, 0deg);
   transform-style: preserve-3d;
   z-index: 10;
   width: 100%;
-  opacity: .65;
+  opacity: 0.65;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -182,13 +199,28 @@ body::after {
   left: 72%;
   right: 0%;
   transition: all 0.9s ease-in;
-
 }
 
+.gradient-hero {
+  z-index: 0;
+  height: 92em;
+  mix-blend-mode: darken;
+  background-color: #f8f7f3;
+  background-image: url("https://uploads-ssl.webflow.com/6448ee66738b3eb4ba15b54f/6448f42142284b28cc3837b6_BetterAI-gradient-C.jpg"),
+    url("https://uploads-ssl.webflow.com/6448ee66738b3eb4ba15b54f/6448ee67738b3e3ec215b578_gradient_1.jpg");
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: scroll, scroll;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
 
-
-@media (max-width:768px){
-  .banner_info_image{
+@media (max-width: 768px) {
+  .banner_info_image {
     right: 0px;
   }
 }

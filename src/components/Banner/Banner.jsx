@@ -8,9 +8,13 @@ import { FaChevronRight } from "react-icons/fa";
 const Banner = () => {
   return (
     <>
+      <div className="gradient-hero">
+        <div className="noise"></div>
+      </div>
       <section id="banner">
-        <div className="banner_bc"></div>
-        <div className="max-w-[1250px] m-auto py-[35px] px-[15px] w-[100%] grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-[30px]">
+        {/* <div className="banner_bc"></div> */}
+
+        <div className="max-w-[1250px] m-auto py-[35px] px-[15px] w-[100%] grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-[30px] items-center">
           <div className="banner_info flex flex-col gap-[40px]  items-center justify-start  w-full  ">
             <div className="heading w-full text-center md:text-start">
               <h1 className="font-Space_Grotesk text-[14vw] sm:text-[70px] leading-[65.8px] md:leading-[74.2px] text-[#ffffff] text-center md:text-start  ">
@@ -47,27 +51,27 @@ const Banner = () => {
             </div>
           </div>
           <div className="banner_info_image flex justify-center md:justify-end items-center">
-          <div className="banner_img_1">
-          <img
-              src={bannerInfo1}
-              alt="Banner_Info_1"
-              className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
-            />
-          </div>
-          <div className="banner_img_2">
-          <img
-              src={bannerInfo2}
-              alt="Banner_Info_1"
-              className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
-            />
-          </div>
-          <div className="banner_img_3">
-          <img
-              src={bannerInfo3}
-              alt="Banner_Info_1"
-              className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
-            />
-          </div>
+            <div className="banner_img_1">
+              <img
+                src={bannerInfo1}
+                alt="Banner_Info_1"
+                className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
+              />
+            </div>
+            <div className="banner_img_2">
+              <img
+                src={bannerInfo2}
+                alt="Banner_Info_1"
+                className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
+              />
+            </div>
+            <div className="banner_img_3">
+              <img
+                src={bannerInfo3}
+                alt="Banner_Info_1"
+                className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
+              />
+            </div>
           </div>
         </div>
       </section>
