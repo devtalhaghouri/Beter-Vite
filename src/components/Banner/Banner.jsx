@@ -22,7 +22,7 @@ const Banner = () => {
               </h1>
             </div>
             <div className="banner_des w-[100%]">
-              <p className="leading-[1.5em] text-white font-Space_Grotesk text-[1.2em] text-center md:text-start md:max-w-[450px]  ">
+              <p className="leading-[1.5em] text-white font-Space_Grotesk text-[1.2em] text-center md:text-start md:max-w-[450px] font-[100] font-medium">
                 Discover unlimited variations of yourself and create unique
                 avatars. Convert yourself into any character or be in any place.
               </p>
@@ -55,21 +55,21 @@ const Banner = () => {
               <img
                 src={bannerInfo1}
                 alt="Banner_Info_1"
-                className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
+                className="w-full max-w-[300px] max-h-[90vh] transition-transform rotate-3d rounded-3xl"
               />
             </div>
             <div className="banner_img_2">
               <img
                 src={bannerInfo2}
                 alt="Banner_Info_1"
-                className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
+                className="w-full max-w-[300px] max-h-[90vh] transition-transform rotate-3d rounded-3xl"
               />
             </div>
             <div className="banner_img_3">
               <img
                 src={bannerInfo3}
                 alt="Banner_Info_1"
-                className="w-full max-w-[300px] max-h-[90vh] rounded-[10px] transition-transform rotate-3d"
+                className="w-full max-w-[300px] max-h-[90vh] transition-transform rotate-3d rounded-3xl"
               />
             </div>
           </div>

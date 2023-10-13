@@ -13,7 +13,20 @@
   font-family: "Space_Grotesk";
   src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Bold.otf");
 }
-
+@font-face {
+  font-family: "Space_Grotesk medium";
+  src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Medium.otf");
+}
+@font-face {
+  font-family: "Space_Grotesk light";
+  src: url("./Styles/Font/space-grotesk-cufonfonts/SpaceGrotesk-Light.otf");
+}
+.font-medium {
+  font-family: "Space_Grotesk medium";
+}
+.font-light {
+  font-family: "Space_Grotesk light";
+}
 #app {
   position: relative;
   overflow: hidden;
@@ -110,7 +123,7 @@ body::after {
   justify-content: center;
   align-items: center;
   display: flex;
-  transition: all 0.9s ease-in;
+  transition: all 2.5s ease-out;
   right: -130px;
 }
 
@@ -123,32 +136,30 @@ body::after {
 
 .banner_info_image:hover .banner_img_1 {
   will-change: transform;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(11.8751deg)
-    rotateY(-11.8751deg) rotateZ(11.8751deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(22.9972deg)
+    rotateY(-22.9972deg) rotateZ(15.9972deg) skew(-7deg, 0deg);
   transform-style: preserve-3d;
 }
 
 .banner_info_image:hover .banner_img_2 {
   will-change: transform;
-  transform: translate3d(0px, 2.84688em, -200px) scale3d(1, 1, 1)
-    rotateX(15.5659deg) rotateY(-15.5659deg) rotateZ(15.5659deg)
-    skew(0deg, 0deg);
+  transform: translate3d(0px, -30px, 0px) scale3d(1, 1, 1) rotateX(22.9972deg)
+    rotateY(-22.9972deg) rotateZ(15.9972deg) skew(-7deg, 0deg);
   transform-style: preserve-3d;
 }
 
 .banner_info_image:hover .banner_img_3 {
   will-change: transform;
-  transform: translate3d(0px, -1.71092em, -240px) scale3d(1, 1, 1)
-    rotateX(15.5659deg) rotateY(-15.5659deg) rotateZ(15.5659deg)
-    skew(0deg, 0deg);
+  transform: translate3d(0px, -30px, 0px) scale3d(1, 1, 1) rotateX(22.9972deg)
+    rotateY(-22.9972deg) rotateZ(15.9972deg) skew(-7deg, 0deg);
   transform-style: preserve-3d;
 }
 .banner_info_image .banner_img_1 {
-  transition: all 0.5s ease-in-out;
+  transition: all 2.5s ease-out;
   will-change: transform;
   /* margin-right: -140px; */
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(22.9972deg)
-    rotateY(-22.9972deg) rotateZ(22.9972deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(3.9972deg)
+    rotateY(-25.9972deg) rotateZ(11.9972deg) skew(-7deg, 0deg);
   transform-style: preserve-3d;
   z-index: 30;
   width: 100%;
@@ -158,16 +169,34 @@ body::after {
   position: relative;
   top: 4em;
   left: -25%;
+  border-radius: 20px;
 }
 
 .banner_info_image .banner_img_2 {
   will-change: transform;
   /* margin-right: -140px; */
   /* margin-bottom: 80px; */
-  transition: all 0.9s ease-in;
-
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(22.9972deg)
-    rotateY(-22.9972deg) rotateZ(22.9972deg) skew(0deg, 0deg);
+  transition: all 2.5s ease-out;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 0.9) rotateX(3.9972deg)
+    rotateY(-25.9972deg) rotateZ(11.9972deg) skew(-7deg, 0deg);
+  transform-style: preserve-3d;
+  z-index: 20;
+  width: 85%;
+  opacity: 0.74;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: -1%;
+  bottom: 0%;
+  left: 15%;
+  right: 0%;
+  will-change: transform;
+  /* margin-right: -140px; */
+  /* margin-bottom: 80px; */
+  transition: all 2.5s ease-out;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(3.9972deg)
+    rotateY(-25.9972deg) rotateZ(11.9972deg) skew(-7deg, 0deg);
   transform-style: preserve-3d;
   z-index: 20;
   width: 100%;
@@ -176,29 +205,28 @@ body::after {
   align-items: center;
   display: flex;
   position: absolute;
-  top: -18%;
+  top: 5%;
   bottom: 0%;
-  left: 35%;
+  left: 15%;
   right: 0%;
 }
 .banner_info_image .banner_img_3 {
   will-change: transform;
-  transform: translate3d(0px, -1.99936em, -240px) scale3d(1, 1, 1)
-    rotateX(22.9972deg) rotateY(-22.9972deg) rotateZ(22.9972deg)
-    skew(0deg, 0deg);
+  transform: translate3d(9px, -26px, 0px) scale3d(1, 1, 1) rotateX(11.9972deg)
+    rotateY(-20.9972deg) rotateZ(14.9972deg) skew(-5deg, 0deg);
   transform-style: preserve-3d;
   z-index: 10;
-  width: 100%;
+  width: 79%;
   opacity: 0.65;
   justify-content: center;
   align-items: center;
   display: flex;
   position: absolute;
-  top: 26%;
+  top: 40%;
   bottom: 0%;
-  left: 72%;
+  left: 58%;
   right: 0%;
-  transition: all 0.9s ease-in;
+  transition: all 2.5s ease-out;
 }
 
 .gradient-hero {

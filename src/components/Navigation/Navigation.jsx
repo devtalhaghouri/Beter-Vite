@@ -35,7 +35,7 @@ const Navigation = () => {
                     key={nav.name}
                     className="font-Space_Grotesk text-#ffffffb3-500 flex items-center justify-center text-[#ffffffb3] md:px-[0.7em] md:py-[1.4em]"
                   >
-                    <li>{nav.name}</li>
+                    <li className="font-light"> {nav.name}</li>
                   </Link>
                 </>
               ))}
@@ -43,9 +43,9 @@ const Navigation = () => {
             <div className="navigation_button flex flex-row w-full justify-between max-w-fit items-center ">
               <Link
                 to={"#"}
-                className="rounded-[30px] bg-[white] font-Space_Grotesk flex gap-[5px]  py-[0.6em] md:py-[0.7em]  px-[0.7em] shadow-lg text-[15px] md:text-[16px] gap-[10px]"
+                className="rounded-[30px] bg-[white]  flex gap-[5px]  py-[0.6em] md:py-[0.7em]  px-[0.7em] shadow-lg text-[15px] md:text-[16px] gap-[10px] font-light"
               >
-                <span className="btn_icon flex items-center justify-center">
+                <span className="btn_icon mr-2 flex items-center justify-center">
                   <LiaDownloadSolid />
                 </span>
                 Get the App
